@@ -1,9 +1,20 @@
 import { DataGroup } from "./DataGroup";
 export interface IIdentityValues {
-    [key: string]: string | undefined;
+    personalData: IPersonalData;
+}
+export interface Place {
+    structuredPlace?: {
+        street?: string;
+        zipCode?: string;
+        city?: string;
+        country?: string;
+    };
+}
+export interface IPersonalData {
+    [key: string]: Place | string | undefined;
 }
 export declare class Identity {
-    private values;
-    constructor(values: IIdentityValues);
-    get(dataGroup: DataGroup): string | undefined;
+    private data;
+    constructor(data: IIdentityValues);
+    get(dataGroup: DataGroup): Place | string | undefined;
 }

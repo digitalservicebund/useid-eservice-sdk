@@ -2,11 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Identity = void 0;
 class Identity {
-    constructor(values) {
-        this.values = values;
+    constructor(data) {
+        this.data = data;
     }
     get(dataGroup) {
-        return this.values[dataGroup.toLowerCase()];
+        return this.data.personalData[dataGroup];
     }
 }
 exports.Identity = Identity;
