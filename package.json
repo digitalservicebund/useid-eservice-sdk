@@ -5,6 +5,10 @@
   "keywords": [],
   "author": "DigitalService GmbH des Bundes",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalservicebund/useid-eservice-sdk"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
