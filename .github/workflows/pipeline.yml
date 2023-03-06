@@ -19,6 +19,7 @@ jobs:
       - run: npm run test
   build-and-publish:
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: [test]
     steps:
       - uses: actions/checkout@v3
