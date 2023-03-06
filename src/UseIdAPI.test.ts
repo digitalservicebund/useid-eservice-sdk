@@ -38,7 +38,7 @@ describe('getIdentity()', () => {
   it('should start session and return tcTokenUrl', async () => {
     const eIdSessionId = "mocked eIdSessionId";
     const response = await useIdAPI.getIdentity(eIdSessionId);
-    expect(response).toEqual(new Identity(identityValues as any));
+    expect(response).toEqual(new Identity(identityValues));
     expect(axiosGet).toHaveBeenCalledWith(`/${eIdSessionId}`);
   });
 });
