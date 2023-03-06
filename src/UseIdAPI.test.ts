@@ -26,7 +26,7 @@ describe('startSession()', () => {
 });
 
 describe('getIdentity()', () => {
-  const identityValues = { dg1: "dg1", dg2: "dg2" };
+  const identityValues = { personalData: { dg1: "dg1", dg2: "dg2" }};
   let axiosGet: jest.SpyInstance;
   beforeEach(() => {
     axiosGet = jest.spyOn(axios, 'get').mockImplementation(jest.fn(() => Promise.resolve({ data: identityValues })) as jest.Mock);
