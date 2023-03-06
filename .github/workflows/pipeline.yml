@@ -29,6 +29,6 @@ jobs:
       - run: npm ci
       - run: npm run test
       - run: npm run build --if-present
-      - run: npm publish
+      - run: JS-DevTools/npm-publish@0f451a94170d1699fd50710966d48fb26194d939
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
