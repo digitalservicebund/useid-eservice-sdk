@@ -27,8 +27,11 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run build --if-present
-      - uses: JS-DevTools/npm-publish@0f451a94170d1699fd50710966d48fb26194d939
-        with:
-          token: ${{secrets.NPM_TOKEN}}
+      - name: Install npm dependencies
+        run: npm ci
+      - name: Build SDK
+        run: npm run build --if-present
+      - name: Publish to NPM registry
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
