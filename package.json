@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/digitalservicebund/useid-eservice-sdk"
   },
+  "compilerOptions": {
+    "skipLibCheck": true
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
