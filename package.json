@@ -29,9 +29,6 @@
     "axios": "^0.27.2"
   },
   "jest": {
-    "preset": "ts-jest",
-    "moduleNameMapper": {
-      "^axios$": "axios/dist/axios.js"
-    }
+    "preset": "ts-jest"
   }
 }
