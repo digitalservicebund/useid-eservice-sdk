@@ -43,7 +43,7 @@ describe('getIdentity()', () => {
   });
 });
 
-test('reproduction: axios global namespace pollution', async () => {
+test('reproduction: axios global namespace pollution', async() => {
   let authHeader: string | undefined;
   const server = http
     .createServer((req: http.IncomingMessage, res: http.ServerResponse) => {
