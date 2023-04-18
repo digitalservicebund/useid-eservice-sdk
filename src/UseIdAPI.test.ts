@@ -44,8 +44,6 @@ describe('getIdentity()', () => {
 });
 
 test('reproduction: axios global namespace pollution', async() => {
-  axios.defaults.adapter = require('axios/lib/adapters/http.js');
-
   let authHeader: string | undefined;
   const server = http
     .createServer((req: http.IncomingMessage, res: http.ServerResponse) => {
