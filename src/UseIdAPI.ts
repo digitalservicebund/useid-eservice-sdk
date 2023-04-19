@@ -12,7 +12,7 @@ export class UseIdAPI {
   constructor(apiKey: string, domain: string) {
     this.domain = domain;
     this.widgetSrc = `${domain}/widget.js`;
-    this.apiBaseUrl = `${domain}/api/v1/identification/sessions`;
+    this.apiBaseUrl = `${domain}/api/v1/identifications`;
     this.api = axios.create({
       baseURL: this.apiBaseUrl,
       headers: {
