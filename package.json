@@ -29,9 +29,6 @@
     "axios": "^1.3.5"
   },
   "jest": {
-    "preset": "ts-jest",
-    "transformIgnorePatterns": [
-      "/node_modules/(?!(axios)/)"
-    ]
+    "preset": "ts-jest"
   }
 }
