@@ -13,7 +13,7 @@ class UseIdAPI {
         });
         this.domain = domain;
         this.widgetSrc = `${domain}/widget.js`;
-        this.apiBaseUrl = `${domain}/api/v1/identification/sessions`;
+        this.apiBaseUrl = `${domain}/api/v1/identifications`;
     }
     async startSession() {
         const response = await axios_1.default.post(this.apiBaseUrl);
