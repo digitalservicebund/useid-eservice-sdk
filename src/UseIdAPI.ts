@@ -22,7 +22,7 @@ export class UseIdAPI {
   }
 
   async startSession(): Promise<IStartSessionResponse> {
-    const response = await this.api.post('/');
+    const response = await this.api.post('');
     return {
       tcTokenUrl: response.data.tcTokenUrl,
     };

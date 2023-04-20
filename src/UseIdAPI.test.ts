@@ -24,7 +24,7 @@ describe('startSession()', () => {
     const response = await useIdAPI.startSession();
     expect(response).toEqual({ tcTokenUrl });
     expect(useIdAPI.api.getUri()).toEqual(`${useIdAPI.domain}/api/v1/identifications`);
-    expect(axiosPost).toHaveBeenCalledWith('/');
+    expect(axiosPost).toHaveBeenCalledWith('');
   });
 });
 
