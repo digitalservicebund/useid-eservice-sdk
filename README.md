@@ -1,4 +1,5 @@
 # UseID eService SDK
+Javascript SDK to easily embed the UseId eService.
 
 ## Usage
 
